@@ -1,0 +1,19 @@
+Siga as etapas abaixo:
+
+- Baixe e instale o Tesseract OCR a partir do seguinte link: https://github.com/UB-Mannheim/tesseract/wiki
+
+- Durante a instalação, certifique-se de selecionar a opção para adicionar o Tesseract OCR ao PATH do sistema.
+
+- Após a instalação, verifique se o Tesseract OCR está funcionando corretamente, abrindo um terminal e digitando o seguinte comando:
+
+         tesseract --version
+
+Certifique-se de que a versão do Tesseract OCR seja exibida corretamente no terminal.
+
+- No código Python, verifique se o caminho para o executável do Tesseract OCR está correto. Você pode ajustar a variável tesseract_cmd no código para apontar para o local correto do executável do Tesseract OCR.
+
+- No arquivo Python verifique o caminho do tesseract
+ 
+pytesseract.pytesseract.tesseract_cmd = r'C:\Caminho\para\tesseract.exe'
+
+Substitua C:\Caminho\para\tesseract.exe pelo caminho correto do executável do Tesseract OCR no seu sistema.
